@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.example.PrinterManager.ControllerManagerTest
+-------------------------------------------------------------------------------
+Tests run: 34, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.14 s <<< FAILURE! - in com.example.PrinterManager.ControllerManagerTest
+updateLivnessDisconnectedPrinter  Time elapsed: 0.011 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.example.PrinterManager.ControllerManagerTest.updateLivnessDisconnectedPrinter(ControllerManagerTest.java:102)
+
+addPrintingJobAndReturnIdLongString  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.example.PrinterManager.ControllerManagerTest.addPrintingJobAndReturnIdLongString(ControllerManagerTest.java:126)
+
+getStatistics  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.example.PrinterManager.ControllerManagerTest.getStatistics(ControllerManagerTest.java:180)
+
+getPrinterssWithPrintersAdded  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <[{"printer1":{"Jobs":{},"liveness":true,"id":1}}]> but was: <[{"printer1":{"Jobs":{},"liveness":true,"id":1}}, {"printer1":{"Jobs":{},"liveness":true,"id":1}}]>
+	at com.example.PrinterManager.ControllerManagerTest.getPrinterssWithPrintersAdded(ControllerManagerTest.java:46)
+
+getPrinterssNoPrintersAdded  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <[]> but was: <[{"printer1":{"Jobs":{},"liveness":true,"id":1}}]>
+	at com.example.PrinterManager.ControllerManagerTest.getPrinterssNoPrintersAdded(ControllerManagerTest.java:39)
+
+getStatisticsEmpty  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.example.PrinterManager.ControllerManagerTest.getStatisticsEmpty(ControllerManagerTest.java:191)
+
+addPrintingJobAndReturnIdValidPrinter  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.example.PrinterManager.ControllerManagerTest.addPrintingJobAndReturnIdValidPrinter(ControllerManagerTest.java:111)
+
